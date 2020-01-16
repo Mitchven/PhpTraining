@@ -166,3 +166,146 @@
     //Multidimensional
 
 ?>
+<?php
+
+//Error Handling
+// $denominator = 0;
+
+// if ($denominator != 0){
+//     echo 2/ $denominator;
+// }else{
+//     echo "cannot divide by zero (0)";
+// }
+
+// function my_error_handler($error_no, $error_msg)
+// {
+//     echo "Opps, something is not right";
+//     echo "<br>Error number: [$error_no]";
+//     echo "<br>Error Description: [$error_msg]";
+// }
+// set_error_handler("my_error_handler");
+// echo (5/0);
+
+function checkNum($number){
+    if($number>1) {
+        throw new Exception("Value must be 1 or below");
+    }
+    return true;
+}
+// checkNum(0);
+
+try {
+    checkNum(2);
+    //if the exception is thrown
+    echo 'If you see this, the number is 1 or below';
+}catch(Exception $e){
+    echo 'Message: ' .$e->getMessage();
+}
+
+
+?>
+<?php
+    // session_start();
+    // session_destroy(); 
+
+    // if( isset($_SESSION['counter'])){
+    //     $_SESSION['counter'] +=1;
+    // }else{
+    //     $_SESSION['counter']=1;
+    // }
+
+    // $msg = "You have visited this page" . $_SESSION['counter'];
+    // $msg .= "in this session.";
+
+    // echo $msg;
+
+     
+
+    // session_start();
+    // $_SESSION['tens'] = 10;
+
+    // if( isset($_SESSION['tens'])){
+    //     $_SESSION['tens'] +=10;
+    // }else{
+    //     $_SESSION['tens'] = 10;
+    // }
+
+    // $msg = "You have visited this page" . $_SESSION['tens'];
+    // $msg .= "in this session.";
+
+
+    // echo $_SESSION['tens']."<br>";
+    // echo $msg;
+    // unset($_SESSION['tens']);
+
+    // session_abort();
+// include("Function.php");
+
+// $classtest = new test();
+// echo $classtest->test2();
+
+// function addFive($num){
+//     $num += 5;
+// }
+
+// $orignum = 10;
+// addFive($orignum);
+
+// echo "Original Value is $orignum <br />";
+
+//Dynamic function call
+// function sayHello($name){
+//     echo "Hello " . $name .  "<br />";
+// }
+
+// $function_holder = "sayHello";
+// $function_holder("Mars");
+
+
+//COOKIES
+
+// if(isset($_COOKIE['username'])){
+//     setcookie('username',"Mars",time()+30*24*60*60);
+// }else{
+//     setcookie('username', "Gamboa",time()+30*24*60*60);
+// }
+// echo $_COOKIE['username'];
+
+class PNTraining{
+
+//constructor
+    public function _construct(){
+        echo 'The class" ' . _CLASS_ . ' " was initialized"';
+    }
+
+    public function test(){
+        echo 'The class"' . _CLASS_ . '" " is tested "';
+    }
+}
+
+$obj = new PNTraining;
+echo $obj->test();
+
+?>
+<?php
+
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+
+// //Create connection
+// $conn = new mysqli($servername, $username, $password);
+
+// //Check connection
+// if($conn->connect_error){
+//     die("Connection failed: " . $conn->connect_error);
+// }
+// echo "Connected successfully";
+
+// $link = mysqli_connect("localhost","root","","pntraining");
+
+// echo $link;
+// if($link == false){
+//     die
+// }
+?>

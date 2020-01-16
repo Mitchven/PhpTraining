@@ -94,7 +94,7 @@
             $file = filemtime($filename);
 
             echo "Filename: " . $filename;
-            echo "<br>Last modified date: Last modified ".date("l, dS F, Y, H:sa.",$file);
+            echo "<br>Last modified date: Last modified ". date("l, dS F, Y, H:sa.",$file);
         }
         lastModifiedInfo();
 

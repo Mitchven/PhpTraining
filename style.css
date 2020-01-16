@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font: 200% Comic;
+    color: white ;
+    text-align: center;
+}
+b ,th{
+    color: white;
+    font: 150% comic;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+table, th,tr, td {
+  border: 5px solid white;
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+button {
+  background-color: skyblue;
+  color: white;
+  padding: 7px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font:120% comic;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+}
